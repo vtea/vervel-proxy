@@ -1,0 +1,14 @@
+# ip proxy
+{
+"version": 2,
+"routes": [
+{"src": "/(.*)","dest": "http://IP:80/$1"}
+]
+}
+# domain proxy
+{
+"version": 2,
+"routes": [
+{"src": "/(.*)","dest": "https://Your-domain/$1"}
+]
+}
