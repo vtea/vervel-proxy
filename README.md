@@ -1,2 +1,25 @@
 # vervel-proxy
-vercel反向代理|OpenAI/ChatGPT 免翻墙代理|github免翻墙代理|github下载加速|google代理|vercel万能代理
+最简单的vercel反向代理，两种方式：fork后选择你需要的方式，删除不要的
+
+#### 1. 基于ip（可以加端口）直接代理
+
+{
+"version": 2,
+"routes": [
+{"src": "/(.*)","dest": "http://IP:80/$1"}
+]
+}
+
+#### 2. 基于域名
+
+{
+"version": 2,
+"routes": [
+{"src": "/(.*)","dest": "https://Your-domain/$1"}
+]
+}
+
+# 一键部署
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/vtea/vervel-proxy)
+
